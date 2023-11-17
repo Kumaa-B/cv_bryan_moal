@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap');
+h1,h2{
+  font-family: 'Lato', sans-serif;
+}
+
+*{
+    margin: 0;
+  }
+  
+  body{
+    font-family: "Raleway", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1160px;
+    @font-face {
+      font-family:'Raleway', sans-serif;;
+      src: url(<link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,695&display=swap" rel="stylesheet">);
+    }
+  }
+  
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:hover{
+    text-decoration: underline;
+  }
+  
+  h1 {
+    margin: 0 0 1rem;
+    font-size: 2.5rem;
+    margin-bottom:0rem;
+  }
+
+  h2{
+    margin: 0 0 1rem;
+    background: #dbc2a4;
+    color: black;
+    padding: 0 2em 0 1em;
+  }
+  
+  .section{
+    margin-bottom: 1.5rem;
+  }
+
+  .article{
+    margin-bottom: 1.5rem;
+  }
+
+  .article:hover{
+    border-right: .5rem solid #782221;  
+  }
+
+  p{
+    margin: 1em;
+  }
+
+  /* Container */
+  .cv-container{
+    display: grid;
+    grid-template-areas:
+    "a a a"
+    "b b b"
+    "c d d"
+    "c d d"
+    "e e e";
+    margin-left: auto;
+    margin-right: auto;
+    width: 1160px;
+    border-left: 1em;
+  }
+
+  /* En tête */
+  .head{
+    grid-area: a;
+    background-color: #782221;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    color: white;
+  }
+  
+  .infos{
+    grid-area: b;
+    columns: 6rem auto;
+    list-style-type: none;
+    background-color: #2c1d27;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px;
+    font-style: italic;
+    align-items: center;
+  }
+
+  .photo{
+    border-radius: 50%;
+    box-shadow: 0px 0px 1em 1em black;
+    max-width: 150px;
+    margin: 3em;
+    margin-bottom: 0px;
+  }
+
+  .photo:hover{
+    cursor: zoom-in;
+  }
+
+   /* Colonne de Droite */
+  .right-column{
+    grid-area: d;
+    display: flex;
+    flex-direction: column;
+  }
+  .border-red{
+    border-left: .5rem solid #782221;
+  }
+
+  .marge{
+    margin: 1em;
+  }
+
+  /* Colonne de Gauche */
+  .left-column{
+    grid-area: c;
+    padding: 50px;
+    background-color: #782221;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+  }
+
+  .indent{
+    text-indent: 3em;
+  }
+  .sect{
+    padding-left: 10;
+  }
+
+  .skills{
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    margin: 0 0 1rem;
+  }
+
+  /* Dérnière ligne */
+  .foot{
+    grid-area: e;
+    background: #782221;
+    padding: 3em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  
+  .linkedin{
+    width: 3.5em;
+  }
+  .linkedin:hover{
+    opacity: 0.5;
+  }
+  .twitter{
+    width: 3.5em;
+  }
+  .twitter:hover{
+    opacity: 0.5;
+  }
+  .github{
+    width: 3.5em;
+  }
+  .github:hover{
+    opacity: 0.5;
+  }
+
+  .date{
+  color: white;
+  }
